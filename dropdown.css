@@ -1,0 +1,32 @@
+.root {
+    list-style-type: none;
+    padding: 10px 15px;
+    background-color: #ccc;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    background-color: mediumpurple;
+    list-style-type: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 38px;
+    left: 0;
+}
+
+.root:hover .dropdown {
+    display: block;
+}
+
+.dropdown > li {
+    cursor: pointer;
+}
+
+.dropdown > li:hover {
+    text-decoration: underline;
+    color: white;
+}
